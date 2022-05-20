@@ -51,6 +51,7 @@ body {
   border: 1px solid black;
 }
 
+<<<<<<< HEAD
 @import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
 
 :root {
@@ -59,6 +60,8 @@ body {
   --bg-color: #fff;
 }
 
+=======
+>>>>>>> 65c4e92527509e929d3dc01bf1f07d67ab0fe69b
 body {
   scroll-behavior: smooth;
 }
@@ -81,7 +84,7 @@ body {
 
 .cart {
   position: fixed;
-  right: -100;
+  right: 0;
   top: 0;
   width: 360px;
   min-height: 100vh;
@@ -90,11 +93,14 @@ body {
   box-shadow: -2px 4px hs1(04%15%/10%);
   z-index: 100;
   transition: 0.3s;
+<<<<<<< HEAD
   display: none;
 }
 
 .cart.show {
   right: 0;
+=======
+>>>>>>> 65c4e92527509e929d3dc01bf1f07d67ab0fe69b
 }
 
 .cart-title {
