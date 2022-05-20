@@ -1,5 +1,45 @@
 @import url('http://fonts.cdnfonts.com/css/vegan-style-personal-use');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+body{
+    font-family: 'Poppins';
+    
+}
+
 
 .navbar-brand{
     font-family: 'Vegan Style Personal Use';
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: hsla(14, 100%, 54%, 1);
+}
+.active{
+    font-size: 20px;
+    color: hsla(0, 0%, 11%, 1) !important;
+   
+}
+/* .container2{
+    
+} */
+.container2 h1{
+    font-weight: 700;
+
+
+}
+ .pre{
+    font-size: 30px;
+}
+.size{
+    font-size: 20px;
+}
+.container2 section button{
+    border: none;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 20px;
+}
+.container2 section button:hover{
+    border: 1px solid black;
 }
