@@ -5,5 +5,16 @@ const container = document.querySelector('.container');
 
 document.addEventListener('DOMContentLoaded', async () => {
     const data = await getData('products');
-    verProductos(data, container)
+    verProductos(data, container);
+})
+
+document.addEventListener('click', async ({ target }) => {
+    const data = await getData('products');
+
+    if (target.classList.contains('product')) {
+        const producto = data.find(item => item.id == target.id);
+        console.log(producto);
+        sessionStorage.setItem('detalle', JSON.stringify(producto));
+        window.location.href = './pages/detalle.html';
+    }
 })

@@ -1,4 +1,55 @@
 @import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+.navbar-brand {
+  font-family: "Vegan Style Personal Use";
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  color: hsla(14, 100%, 54%, 1);
+}
+
+.active {
+  font-size: 20px;
+  color: hsla(0, 0%, 11%, 1) !important;
+}
+
+.container2 {
+  width: 424px;
+}
+.container2 h1 {
+  font-weight: 700;
+}
+
+.pre {
+  font-size: 30px;
+}
+
+.size {
+  font-size: 20px;
+}
+
+.container2 .sect1 button {
+  border: none;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.container2 section button:hover {
+  border: 1px solid black;
+}
+
+@import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
 :root {
   --main-color: #fd4646;
   --text-color: #171427;
@@ -8,14 +59,17 @@
 body {
   scroll-behavior: smooth;
 }
+
 .navbar-brand {
   font-family: "Vegan Style Personal Use";
 }
+
 .card {
   box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
     0 1px 5px 0 rgb(0 0 0 / 20%);
   border-radius: 2px;
 }
+
 .card:hover {
   cursor: pointer;
   transform: translateY(-15px);
@@ -111,4 +165,28 @@ body {
   font-size: 2rem;
   color: var(--text-color);
   cursor: pointer;
+}
+.sect2 button:first-child {
+  background-color: #1d1d1d;
+  color: white;
+  width: 424px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+}
+
+.sect2 button:last-child {
+  background-color: #4276fb;
+  color: white;
+  width: 424px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+}
+.parrafo {
+  text-align: justify;
 }
