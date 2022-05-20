@@ -23,9 +23,10 @@ document.addEventListener("click", async ({ target }) => {
 });
 
 //open card
-cartIcon.onclick = () => {
+cartIcon.addEventListener("click", () => {
+  console.log("clicked");
   cart.classList.add("active");
-};
+});
 // Close cart
 closeCart.onclick = () => {
   cart.classList.remove("active");
