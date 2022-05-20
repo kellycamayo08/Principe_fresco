@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const producto = JSON.parse(sessionStorage.getItem('detalle'));
     const { image, image2, image3, price, title, description } = producto;
-
     detalle.innerHTML = `
     <section class="d-flex m-5">
     <div class="d-flex flex-column mx-5 ">
@@ -38,8 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <button>XXL</button>
       </section>
       <section class="sect2 d-flex flex-column my-4">
-        <button class="btnAdd">ADD TO CART</button>
-        <button>BUY IT NOW</button>
+        <button>ADD TO CART</button>
+        <button>DELETE</button>
       </section>
 
       <p class="parrafo">${description}</p>
