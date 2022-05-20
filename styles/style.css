@@ -78,9 +78,8 @@ body {
 
 .cart {
   position: fixed;
-  right: -100%;
+  right: -100;
   top: 0;
-  right: 0;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
@@ -88,9 +87,11 @@ body {
   box-shadow: -2px 4px hs1(04%15%/10%);
   z-index: 100;
   transition: 0.3s;
+  display: none;
 }
-.active {
+.show {
   right: 0;
+  display: block;
 }
 
 .cart-title {
@@ -198,23 +199,28 @@ body {
 .parrafo{
     text-align: justify;
 }
-footer{
-    padding: 150px;
-    background-color:  #1D1D1D;
+footer {
+  padding: 150px;
+  background-color: #1d1d1d;
 }
-footer div h1{
-    margin-bottom: 50px;
-    font-family: 'Vegan Style Personal Use';
-    color: hsla(14, 100%, 54%, 1);
+footer div h1 {
+  margin-bottom: 50px;
+  font-family: "Vegan Style Personal Use";
+  color: hsla(14, 100%, 54%, 1);
 }
-.cont{
-    margin-top: 350px;
-    margin-bottom: 300px;
+.cont {
+  margin-top: 350px;
+  margin-bottom: 300px;
 }
 
-.container3 h2{
-    font-size: 75px;
-    font-weight: 700;
+.container3 h2 {
+  font-size: 75px;
+  font-weight: 700;
+}
+.con h2,
+h3 {
+  font-size: 24px;
+  font-weight: 700;
 }
  .con h2, h3{
      font-size: 24px;
