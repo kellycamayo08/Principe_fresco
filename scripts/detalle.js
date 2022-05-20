@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <button>XXL</button>
       </section>
       <section class="sect2 d-flex flex-column my-4">
-        <button>ADD TO CART</button>
+        <button class="btnAdd">ADD TO CART</button>
         <button>BUY IT NOW</button>
       </section>
 
