@@ -195,31 +195,29 @@ body {
 .parrafo {
   text-align: justify;
 }
-<<<<<<< HEAD
-.parrafo{
-    text-align: justify;
+.parrafo {
+  text-align: justify;
 }
-footer{
-    padding: 150px;
-    background-color:  #1D1D1D;
+footer {
+  padding: 150px;
+  background-color: #1d1d1d;
 }
-footer div h1{
-    margin-bottom: 50px;
-    font-family: 'Vegan Style Personal Use';
-    color: hsla(14, 100%, 54%, 1);
+footer div h1 {
+  margin-bottom: 50px;
+  font-family: "Vegan Style Personal Use";
+  color: hsla(14, 100%, 54%, 1);
 }
-.cont{
-    margin-top: 350px;
-    margin-bottom: 300px;
+.cont {
+  margin-top: 350px;
+  margin-bottom: 300px;
 }
 
-.container3 h2{
-    font-size: 75px;
-    font-weight: 700;
+.container3 h2 {
+  font-size: 75px;
+  font-weight: 700;
 }
- .con h2, h3{
-     font-size: 24px;
-     font-weight: 700;
- }
-=======
->>>>>>> a5237549b35a85a326ad884711121991b8b855cd
+.con h2,
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
