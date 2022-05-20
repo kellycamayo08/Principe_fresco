@@ -89,7 +89,7 @@ body {
   transition: 0.3s;
   display: none;
 }
-.show {
+.cart.show {
   right: 0;
 }
 
