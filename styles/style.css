@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('http://fonts.cdnfonts.com/css/vegan-style-personal-use');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
@@ -43,3 +44,23 @@ body{
 .container2 section button:hover{
     border: 1px solid black;
 }
+=======
+@import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
+
+body {
+  scroll-behavior: smooth;
+}
+.navbar-brand {
+  font-family: "Vegan Style Personal Use";
+}
+.card {
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  border-radius: 2px;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all 0.24s;
+}
+>>>>>>> a908b2a79a5510299ea22316603bc48f98a36ff1
