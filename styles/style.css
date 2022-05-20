@@ -78,9 +78,8 @@ body {
 
 .cart {
   position: fixed;
-  right: -100%;
+  right: -101%;
   top: 0;
-  right: 0;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
