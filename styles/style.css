@@ -1,99 +1,196 @@
-@import url('http://fonts.cdnfonts.com/css/vegan-style-personal-use');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-
-body {
-    font-family: 'Poppins';
-
+@import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
 }
 
+body {
+  font-family: "Poppins";
+}
 
 .navbar-brand {
-    font-family: 'Vegan Style Personal Use';
-    font-size: 30px;
-    line-height: 40px;
-    font-weight: 400;
-    color: hsla(14, 100%, 54%, 1);
+  font-family: "Vegan Style Personal Use";
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  color: hsla(14, 100%, 54%, 1);
 }
 
 .active {
-    font-size: 20px;
-    color: hsla(0, 0%, 11%, 1) !important;
-
+  font-size: 20px;
+  color: hsla(0, 0%, 11%, 1) !important;
 }
 
-.container2{
-    width: 424px;
+.container2 {
+  width: 424px;
 }
 .container2 h1 {
-    font-weight: 700;
-
-
+  font-weight: 700;
 }
 
 .pre {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .size {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .container2 .sect1 button {
-    border: none;
-    background-color: white;
-    border-radius: 100%;
-    font-size: 20px;
+  border: none;
+  background-color: white;
+  border-radius: 100%;
+  font-size: 20px;
 }
 
 .container2 section button:hover {
-    border: 1px solid black;
+  border: 1px solid black;
 }
 
 @import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
+:root {
+  --main-color: #fd4646;
+  --text-color: #171427;
+  --bg-color: #fff;
+}
 
 body {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .navbar-brand {
-    font-family: "Vegan Style Personal Use";
+  font-family: "Vegan Style Personal Use";
 }
 
 .card {
-    box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
-        0 1px 5px 0 rgb(0 0 0 / 20%);
-    border-radius: 2px;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%),
+    0 1px 5px 0 rgb(0 0 0 / 20%);
+  border-radius: 2px;
 }
 
 .card:hover {
-    cursor: pointer;
-    transform: translateY(-15px);
-    transition: all 0.24s;
+  cursor: pointer;
+  transform: translateY(-15px);
+  transition: all 0.24s;
 }
 
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 360px;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: white;
+  box-shadow: -2px 4px hs1(04%15%/10%);
+  z-index: 100;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+.cart-product-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.cart-price {
+  font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  outline-color: var(--main-color);
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove {
+  font-size: 24px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--text-color);
+}
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.total-price {
+  margin-left: 0.5rem;
+}
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-buy:hover {
+  background: var(--text-color);
+}
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
 .sect2 button:first-child {
-    background-color: #1D1D1D;
-    color: white;
-    width: 424px;
-    height: 56px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    font-weight: 700;
-    border: none;
+  background-color: #1d1d1d;
+  color: white;
+  width: 424px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
 }
 
 .sect2 button:last-child {
-    background-color: #4276FB;
-    color: white;
-    width: 424px;
-    height: 56px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    font-weight: 700;
-    border: none;
-    
+  background-color: #4276fb;
+  color: white;
+  width: 424px;
+  height: 56px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
 }
+.parrafo {
+  text-align: justify;
+}
+<<<<<<< HEAD
 .parrafo{
     text-align: justify;
 }
@@ -119,3 +216,5 @@ footer div h1{
      font-size: 24px;
      font-weight: 700;
  }
+=======
+>>>>>>> a5237549b35a85a326ad884711121991b8b855cd
