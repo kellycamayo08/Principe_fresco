@@ -78,7 +78,7 @@ body {
 
 .cart {
   position: fixed;
-  right: -101%;
+  right: -100;
   top: 0;
   width: 360px;
   min-height: 100vh;
@@ -87,9 +87,11 @@ body {
   box-shadow: -2px 4px hs1(04%15%/10%);
   z-index: 100;
   transition: 0.3s;
+  display: none;
 }
-.active {
+.show {
   right: 0;
+  display: block;
 }
 
 .cart-title {
