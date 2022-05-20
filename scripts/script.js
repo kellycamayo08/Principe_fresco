@@ -2,7 +2,7 @@ import { getData } from "../helpers/getData.js";
 import { verProductos } from "../modules/verProductos.js";
 
 const container = document.querySelector(".container");
-let cartIcon = document.querySelector("#cart-icon");
+let cartIcon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
 let closeCart = document.querySelector("#close-cart");
 

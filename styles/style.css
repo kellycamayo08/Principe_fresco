@@ -71,7 +71,7 @@ body {
 
 .cart {
   position: fixed;
-  right: 0;
+  right: -100%;
   top: 0;
   width: 360px;
   min-height: 100vh;
@@ -81,7 +81,9 @@ body {
   z-index: 100;
   transition: 0.3s;
 }
-
+.active {
+  right: 0%;
+}
 .cart-title {
   text-align: center;
   font-size: 1.5rem;
@@ -89,6 +91,11 @@ body {
   margin-top: 2rem;
 }
 
+.bx-shopping-bag::before {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
 .cart-box {
   display: grid;
   grid-template-columns: 32% 50% 18%;
