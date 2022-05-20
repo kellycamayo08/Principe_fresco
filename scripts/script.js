@@ -25,9 +25,9 @@ document.addEventListener("click", async ({ target }) => {
 //open card
 cartIcon.addEventListener("click", () => {
   console.log("clicked");
-  cart.classList.add("show");
+  cart.classList.add("active");
 });
 // Close cart
 closeCart.onclick = () => {
-  cart.classList.remove("show");
+  cart.classList.remove("active");
 };
