@@ -7,7 +7,7 @@ export const deleteData =async(endPoint, id) => {
             }
         })
 
-        alert('informacion eliminada')
+        alert('Datos Eliminados')
         window.location.href = "../index.html"
   } catch (error) {
       console.log("hubo un error", error)
