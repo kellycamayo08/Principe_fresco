@@ -1,6 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-
 :root {
   --main-color: #fd4646;
   --text-color: #171427;
@@ -27,7 +26,6 @@ body {
 .container2 {
   width: 424px;
 }
-
 .container2 h1 {
   font-weight: 700;
 }
@@ -49,14 +47,6 @@ body {
 
 .container2 section button:hover {
   border: 1px solid black;
-}
-
-@import url("http://fonts.cdnfonts.com/css/vegan-style-personal-use");
-
-:root {
-  --main-color: #fd4646;
-  --text-color: #171427;
-  --bg-color: #fff;
 }
 
 body {
@@ -90,11 +80,6 @@ body {
   box-shadow: -2px 4px hs1(04%15%/10%);
   z-index: 100;
   transition: 0.3s;
-  display: none;
-}
-
-.cart.show {
-  right: 0;
 }
 .active {
   right: 0%;
@@ -118,28 +103,23 @@ body {
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .cart-img {
   width: 100px;
   height: 100px;
   object-fit: contain;
   padding: 10px;
 }
-
 .detail-box {
   display: grid;
   row-gap: 0.5rem;
 }
-
 .cart-product-title {
   font-size: 1rem;
   text-transform: uppercase;
 }
-
 .cart-price {
   font-weight: 500;
 }
-
 .cart-quantity {
   border: 1px solid var(--text-color);
   outline-color: var(--main-color);
@@ -147,29 +127,24 @@ body {
   text-align: center;
   font-size: 1rem;
 }
-
 .cart-remove {
   font-size: 24px;
   color: var(--main-color);
   cursor: pointer;
 }
-
 .total {
   display: flex;
   justify-content: flex-end;
   margin-top: 1.5rem;
   border-top: 1px solid var(--text-color);
 }
-
 .total-title {
   font-size: 1rem;
   font-weight: 600;
 }
-
 .total-price {
   margin-left: 0.5rem;
 }
-
 .btn-buy {
   display: flex;
   margin: 1.5rem auto 0 auto;
@@ -181,12 +156,10 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-
 .btn-buy:hover {
   background: var(--text-color);
 }
-
-#close-cart {
+.close-cart {
   position: absolute;
   top: 1rem;
   right: 0.8rem;
@@ -194,7 +167,6 @@ body {
   color: var(--text-color);
   cursor: pointer;
 }
-
 .sect2 button:first-child {
   background-color: #1d1d1d;
   color: white;
@@ -216,25 +188,21 @@ body {
   font-weight: 700;
   border: none;
 }
-
 .parrafo {
   text-align: justify;
 }
-.parrafo{
-    text-align: justify;
+.parrafo {
+  text-align: justify;
 }
-
 footer {
   padding: 150px;
   background-color: #1d1d1d;
 }
-
 footer div h1 {
   margin-bottom: 50px;
   font-family: "Vegan Style Personal Use";
   color: hsla(14, 100%, 54%, 1);
 }
-
 .cont {
   margin-top: 350px;
   margin-bottom: 300px;
@@ -244,13 +212,8 @@ footer div h1 {
   font-size: 75px;
   font-weight: 700;
 }
-
 .con h2,
 h3 {
   font-size: 24px;
   font-weight: 700;
 }
- .con h2, h3{
-     font-size: 24px;
-     font-weight: 700;
- }

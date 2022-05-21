@@ -4,7 +4,7 @@ import { verProductos } from "../modules/verProductos.js";
 const container = document.querySelector(".container");
 let cartIcon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
+let closeCart = document.querySelector(".close-cart");
 
 document.addEventListener("DOMContentLoaded", async () => {
   const data = await getData("products");
@@ -28,6 +28,7 @@ cartIcon.addEventListener("click", () => {
   cart.classList.add("active");
 });
 // Close cart
-closeCart.onclick = () => {
+closeCart.addEventListener("click", () => {
+  console.log("clicked");
   cart.classList.remove("active");
-};
+});
