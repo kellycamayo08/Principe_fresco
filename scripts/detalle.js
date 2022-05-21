@@ -1,11 +1,13 @@
+import { deleteData } from "../helpers/deleteData.js";
 
 
 const detalle = document.querySelector('.detalle');
+const bntEliminar = document.querySelector(".delete")
 
 document.addEventListener('DOMContentLoaded', () => {
 
     const producto = JSON.parse(sessionStorage.getItem('detalle'));
-    const { image, image2, image3, price, title, description } = producto;
+    const { id, image, image2, image3, price, title, description } = producto;
 
     detalle.innerHTML = `
     <section class="d-flex m-5">
@@ -39,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       </section>
       <section class="sect2 d-flex flex-column my-4">
         <button class="btnAdd">ADD TO CART</button>
-        <button id="delete">DELETE</button>
+        <button class="delete" id="${id}">DELETE</button>
       </section>
 
       <p class="parrafo">${description}</p>
@@ -47,4 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </section>
     `
+})
+
+
+document.addEventListener('click', async({target}) =>{
+  
+ if(target.classList.contains('delete')){
+   let id = target.id;
+
+   let data = await deleteData('products', id)
+
+   
+ }
+ 
 })

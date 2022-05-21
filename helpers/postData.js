@@ -1,13 +1,22 @@
 export const postData = async(endPoint, objeto) => {
-    fetch(`https://principe-fresk.herokuapp.com/${endPoint}`, {
+    
+  try {
+      
+    let res = await fetch (`https://principe-fresk.herokuapp.com/${endPoint}`, {
         method: 'POST',
         body: JSON.stringify(objeto),
         headers: {
-            "Content-type": "application/json; charset=UTF-8"
+            "Content-type": "application/json; charset=utf-8"
         }
-    }).then(res = await res.JSON())
-    console.log(res)
-        .then(() => alert('producto agregado correctamente'));
+    })
+
+    let data = await res.json();
+    console.log(data)
+    alert("Datos guardados")
+
+  } catch (error) {
+      console.log("Hubo un error", error)
+  }
 
 
 }
