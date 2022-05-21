@@ -13,7 +13,7 @@ export const postData = async(endPoint, objeto) => {
     let data = await res.json();
     console.log(data)
     alert("Datos guardados")
-
+    window.location.href = "../index.html"
   } catch (error) {
       console.log("Hubo un error", error)
   }
