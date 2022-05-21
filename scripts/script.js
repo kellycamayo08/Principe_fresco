@@ -32,10 +32,10 @@ cartIcon.addEventListener("click", () => {
   cart.classList.add("active");
 });
 // Close cart
-<<<<<<< HEAD
-// closeCart.onclick = () => {
-//   cart.classList.remove("active");
-// };
+closeCart.addEventListener("click", () => {
+  console.log("clicked");
+  cart.classList.remove("active");
+});
 
 form.addEventListener('submit', async(e) =>{
   e.preventDefault();
@@ -66,9 +66,7 @@ bntEliminar.addEventListener("click", (e) =>{
 
 })
 
-=======
 closeCart.addEventListener("click", () => {
   console.log("clicked");
   cart.classList.remove("active");
 });
->>>>>>> 2d55306aa3f676b0cea9b59b566a864aabea250c
