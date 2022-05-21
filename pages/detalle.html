@@ -4,6 +4,7 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="../styles/style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
@@ -71,6 +73,73 @@
 
 
  
+=======
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="../index.html">Príncipe fresco</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item " style="margin-left:340px ;">
+              <a class="nav-link active" aria-current="page" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">COLLECTIONS</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a href="" class="mx-2"><img src="../images/user.svg" alt=""></a>
+            <i class='bx bx-shopping-bag cart-icon'></i>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <header class="cart">
+      <div class="nav-container">
+        <a class="navbar-brand" href="#">Príncipe fresco</a>
+        <!-- Cart-Icon -->
+        <h2 class="cart-title">Your Cart</h2>
+        <!-- <-- Content -->
+        <div class="cart-content">
+
+          <div class="cart-box">
+            <img src="" alt="product" class="card-img-top">
+            <div class="detail-box">
+              <div class="cart-product-title"></div>
+              <div class="cart-price"></div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <!-- <1-- Remove Cart -->
+            <i class='bx bxs-trash-alt cart-remove'></i>
+
+          </div>
+
+          <!-- Total-->
+          <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div>
+          </div>
+          <!-- Buy Button -->
+          <button type="button" class="btn-buy">Comprar Ahora</button>
+          <!-- Cart CLose -->
+          <i class='bx bx-x close-cart'></i>
+        </div>
+      </div>
+      </div>
+    </header>
+
+  </header>
+
+
+  <main class="detalle">
+    <div class="container"></div>
+  </main>
+>>>>>>> 2d55306aa3f676b0cea9b59b566a864aabea250c
 
 
   <div class="my-5" style="width: 100%;">
@@ -79,20 +148,27 @@
 
   <footer class="d-flex flex-column  text-center  ">
     <div>
-      <h1>Principe Fresco</h1> 
-   </div>
-   <div >
-       
-       <img class="mx-2" src="../images/youtube.svg" alt="">
-       <img src="../images/facebook.svg" alt="">
-   </div>
+      <h1>Principe Fresco</h1>
+    </div>
+    <div>
+
+      <img class="mx-2" src="../images/youtube.svg" alt="">
+      <img src="../images/facebook.svg" alt="">
+    </div>
   </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+  <script src="../scripts/detalle.js" type="module"></script>
+  <script src="../scripts/script.js" type="module"></script>
+  =======
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
-        <script src="../scripts/detalle.js" type="module"></script>
+  <script src="../scripts/detalle.js" type="module"></script>
+
 </body>
 
 </html>

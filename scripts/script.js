@@ -6,9 +6,9 @@ import { verProductos } from "../modules/verProductos.js";
 const bntEliminar = document.getElementById("delete")
 const form = document.getElementById("form")
 const container = document.querySelector(".container");
-let cartIcon = document.querySelector("#cart-icon");
+let cartIcon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
-let closeCart = document.querySelector("#close-cart");
+let closeCart = document.querySelector(".close-cart");
 
 document.addEventListener("DOMContentLoaded", async () => {
   const data = await getData("products");
@@ -32,6 +32,7 @@ cartIcon.addEventListener("click", () => {
   cart.classList.add("active");
 });
 // Close cart
+<<<<<<< HEAD
 // closeCart.onclick = () => {
 //   cart.classList.remove("active");
 // };
@@ -65,3 +66,9 @@ bntEliminar.addEventListener("click", (e) =>{
 
 })
 
+=======
+closeCart.addEventListener("click", () => {
+  console.log("clicked");
+  cart.classList.remove("active");
+});
+>>>>>>> 2d55306aa3f676b0cea9b59b566a864aabea250c
