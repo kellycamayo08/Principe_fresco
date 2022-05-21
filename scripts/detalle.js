@@ -1,12 +1,9 @@
+const detalle = document.querySelector(".detalle");
 
-
-const detalle = document.querySelector('.detalle');
-
-document.addEventListener('DOMContentLoaded', () => {
-
-    const producto = JSON.parse(sessionStorage.getItem('detalle'));
-    const { image, image2, image3, price, title, description } = producto;
-    detalle.innerHTML = `
+document.addEventListener("DOMContentLoaded", () => {
+  const producto = JSON.parse(sessionStorage.getItem("detalle"));
+  const { image, image2, image3, price, title, description } = producto;
+  detalle.innerHTML = `
     <section class="d-flex m-5">
     <div class="d-flex flex-column mx-5 ">
       <a href="#1"><img class="my-2" src="${image3}" width="80" height="120" alt=""></a>
@@ -37,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <button>XXL</button>
       </section>
       <section class="sect2 d-flex flex-column my-4">
-        <button>ADD TO CART</button>
+        <button class="addToCart" id = ${id}>ADD TO CART</button>
         <button>DELETE</button>
       </section>
 
@@ -45,5 +42,5 @@ document.addEventListener('DOMContentLoaded', () => {
       <p>Click for sizing</p>
     </div>
   </section>
-    `
-})
+    `;
+});
