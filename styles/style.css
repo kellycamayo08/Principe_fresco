@@ -5,18 +5,19 @@
   --text-color: #171427;
   --bg-color: #fff;
 }
-
-body {
+*{
   font-family: "Poppins";
 }
 
-.navbar-brand {
-  font-family: "Vegan Style Personal Use";
+
+
+/* .navbar-brand {
+  font-family: "Vegan Style Personal Use", sans-serif;
   font-size: 30px;
   line-height: 40px;
   font-weight: 400;
   color: hsla(14, 100%, 54%, 1);
-}
+} */
 
 .active {
   font-size: 20px;

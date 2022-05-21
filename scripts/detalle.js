@@ -1,8 +1,12 @@
+import { deleteData } from "../helpers/deleteData.js";
+
 const detalle = document.querySelector(".detalle");
+const bntEliminar = document.querySelector(".delete");
 
 document.addEventListener("DOMContentLoaded", () => {
   const producto = JSON.parse(sessionStorage.getItem("detalle"));
-  const { image, image2, image3, price, title, description } = producto;
+  const { id, image, image2, image3, price, title, description } = producto;
+
   detalle.innerHTML = `
     <section class="d-flex m-5">
     <div class="d-flex flex-column mx-5 ">
@@ -23,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     </div>
     <div class="container2 mx-5">
-      <h1>${title}</h1>
+      <h1 text-center>${title}</h1>
       <p class="pre">$ ${price}</p>
       <p class="si">Size</p>
       <section class="sect1 my-4 ">
@@ -34,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <button>XXL</button>
       </section>
       <section class="sect2 d-flex flex-column my-4">
-        <button class="addToCart" id = ${id}>ADD TO CART</button>
-        <button>DELETE</button>
+        <button class="btnAdd">ADD TO CART</button>
+        <button class="delete" id="${id}">DELETE</button>
       </section>
 
       <p class="parrafo">${description}</p>
@@ -43,4 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </section>
     `;
+});
+
+document.addEventListener("click", async ({ target }) => {
+  if (target.classList.contains("delete")) {
+    let id = target.id;
+
+    let data = await deleteData("products", id);
+  }
 });

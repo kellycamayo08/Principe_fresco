@@ -1,5 +1,8 @@
+import { deleteData } from "../helpers/deleteData.js";
 import { getData } from "../helpers/getData.js";
 import { verProductos } from "../modules/verProductos.js";
+
+
 
 const container = document.querySelector(".container");
 let cartIcon = document.querySelector(".cart-icon");
@@ -28,6 +31,15 @@ cartIcon.addEventListener("click", () => {
   cart.classList.add("active");
 });
 // Close cart
+closeCart.addEventListener("click", () => {
+  console.log("clicked");
+  cart.classList.remove("active");
+});
+
+
+
+
+
 closeCart.addEventListener("click", () => {
   console.log("clicked");
   cart.classList.remove("active");

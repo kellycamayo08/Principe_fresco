@@ -1,8 +1,15 @@
-export const deleteData = (endPoint, id) => {
-    fetch(`https://principe-fresk.herokuapp.com/${endPoint}/${id}`,{
-        method:'DELETE',
-        headers:{
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    }).then(()=> alert('elemento Eliminado'))
+export const deleteData =async(endPoint, id) => {
+  try {
+         await fetch (`https://principe-fresk.herokuapp.com/${endPoint}/${id}`, {
+            method: 'DELETE',
+            headers: {
+                "Content-type": "application/json; charset=utf-8"
+            }
+        })
+
+        alert('Datos Eliminados')
+        window.location.href = "../index.html"
+  } catch (error) {
+      console.log("hubo un error", error)
+  }
 }
