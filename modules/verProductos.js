@@ -1,5 +1,5 @@
 export const verProductos = (data, cont) => {
-  cont.innerHTML = "";
+  cont.innerHTML = " ";
 
   data.forEach(({ image, title, price, id }) => {
     cont.innerHTML += `

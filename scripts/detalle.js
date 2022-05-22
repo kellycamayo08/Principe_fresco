@@ -1,5 +1,7 @@
 import { deleteData } from "../helpers/deleteData.js";
 
+const divContentCart = document.querySelector(".cart-box");
+const total = document.querySelector(".total-price");
 const detalle = document.querySelector(".detalle");
 const bntEliminar = document.querySelector(".delete");
 
@@ -47,6 +49,26 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </section>
     `;
+  sessionStorage.setItem("cart", JSON.stringify(producto));
+  document.addEventListener("click", async ({ target }) => {
+    if (target.classList.contains("btnAdd")) {
+      const producto = JSON.parse(sessionStorage.getItem("detalle"));
+
+      const { image, title, price, id } = producto;
+      divContentCart.innerHTML += `<img src=${image} alt="product" class="card-img-top">
+            <div class="detail-box">
+              <div class="cart-product-title">${title} </div>
+              <div class="cart-price">${price} </div>
+              <input type="number" id=${id} value="1" class="cart-quantity">
+            </div>
+            <!-- <1-- Remove Cart -->
+            <i class='bx bxs-trash-alt cart-remove'></i>
+  `;
+      total.innerHTML += `$${price}`;
+
+      sessionStorage.setItem("cart", JSON.stringify(producto));
+    }
+  });
 });
 
 document.addEventListener("click", async ({ target }) => {

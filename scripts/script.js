@@ -2,8 +2,7 @@ import { deleteData } from "../helpers/deleteData.js";
 import { getData } from "../helpers/getData.js";
 import { verProductos } from "../modules/verProductos.js";
 
-
-
+const divContentCart = document.querySelector(".cart-content");
 const container = document.querySelector(".container");
 let cartIcon = document.querySelector(".cart-icon");
 let cart = document.querySelector(".cart");
@@ -27,20 +26,13 @@ document.addEventListener("click", async ({ target }) => {
 
 //open card
 cartIcon.addEventListener("click", () => {
-  console.log("clicked");
   cart.classList.add("active");
 });
 // Close cart
 closeCart.addEventListener("click", () => {
-  console.log("clicked");
   cart.classList.remove("active");
 });
 
-
-
-
-
 closeCart.addEventListener("click", () => {
-  console.log("clicked");
   cart.classList.remove("active");
 });
