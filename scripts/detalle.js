@@ -4,7 +4,7 @@ const divContentCart = document.querySelector(".cart-box");
 const total = document.querySelector(".total-price");
 const detalle = document.querySelector(".detalle");
 const bntEliminar = document.querySelector(".delete");
-
+const addSsesionStorage = {};
 document.addEventListener("DOMContentLoaded", () => {
   const producto = JSON.parse(sessionStorage.getItem("detalle"));
   const { id, image, image2, image3, price, title, description } = producto;
@@ -49,12 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   </section>
     `;
-  sessionStorage.setItem("cart", JSON.stringify(producto));
+
   document.addEventListener("click", async ({ target }) => {
     if (target.classList.contains("btnAdd")) {
-      const producto = JSON.parse(sessionStorage.getItem("detalle"));
+      sessionStorage.setItem("cart", JSON.stringify(producto));
+      const cart = JSON.parse(sessionStorage.getItem("cart"));
 
-      const { image, title, price, id } = producto;
+      const { image, title, price, id } = cart;
+
       divContentCart.innerHTML += `<img src=${image} alt="product" class="card-img-top">
             <div class="detail-box">
               <div class="cart-product-title">${title} </div>
@@ -63,12 +65,22 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             <!-- <1-- Remove Cart -->
             <i class='bx bxs-trash-alt cart-remove'></i>
+            
   `;
-      total.innerHTML += `$${price}`;
-
-      sessionStorage.setItem("cart", JSON.stringify(producto));
+      total.innerHTML += `$${Number(price)}`;
     }
   });
+
+  divContentCart.innerHTML += `<img src=${image} alt="product" class="card-img-top">
+            <div class="detail-box">
+              <div class="cart-product-title">${title} </div>
+              <div class="cart-price">${price} </div>
+              <input type="number" id=${id} value="1" class="cart-quantity">
+            </div>
+            <!-- <1-- Remove Cart -->
+            <i class='bx bxs-trash-alt cart-remove'></i>
+            
+  `;
 });
 
 document.addEventListener("click", async ({ target }) => {
